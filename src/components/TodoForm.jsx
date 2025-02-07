@@ -15,7 +15,7 @@ const TodoForm = ({ addTodo }) => {
       onSubmit={handleSubmit}
       className="flex flex-col items-center p-6 bg-white shadow-lg rounded-lg space-y-4 max-w-md mx-auto"
     >
-      <h2 className="text-2xl font-semibold text-emerald-800">
+      <h2 className="text-2xl font-semibold text-emerald-700">
         Vad behöver du göra idag?
       </h2>
 

@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
-      <h1 className="text-3xl font-semibold text-green-600 mb-6">Om Appen</h1>
+      <h1 className="text-3xl font-semibold text-emerald-700 mb-6">Om Appen</h1>
       <p className="text-lg text-gray-700 leading-relaxed">
         Håll koll på dina uppgifter och bli mer organiserad med vår todo-app.
         Med enkel och tydlig design kan du snabbt lägga till, markera och följa
