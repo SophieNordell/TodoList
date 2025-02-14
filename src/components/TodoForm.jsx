@@ -23,7 +23,7 @@ const TodoForm = ({ addTodo }) => {
         type="text"
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Vad behöver göras?"
+        placeholder="Lägg till en ny uppgift..."
         className="w-full p-4 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-700 transition-all"
       />
 
