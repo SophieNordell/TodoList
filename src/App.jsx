@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/about";
 import "./App.css";
 
-function App() {
+const App = () => {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
@@ -52,6 +52,6 @@ function App() {
       </Routes>
     </>
   );
-}
+};
 
 export default App;
