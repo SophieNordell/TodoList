@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const location = useLocation(); // Hämta aktuell path
+  const location = useLocation();
 
   return (
     <div className="flex justify-end gap-7 text-lg md:mr-10 mb-10 border-b border-gray-300 pb-2">
