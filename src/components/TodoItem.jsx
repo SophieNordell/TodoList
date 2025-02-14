@@ -8,8 +8,9 @@ const TodoItem = ({ todo, toggleTodo, removeTodo }) => {
       <span className={`text-lg ${todo.completed ? "line-through" : ""} `}>
         {todo.text}
       </span>
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2 ">
         <input
+          aria-label="inputfield"
           type="checkbox"
           checked={todo.completed}
           onChange={() => toggleTodo(todo.id)}
