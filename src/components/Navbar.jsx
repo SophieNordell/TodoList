@@ -1,17 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation(); // Hämta aktuell path
+
   return (
-    <>
-      <div className="flex justify-end gap-7 text-lg md:mr-10 mb-10 border-b border-gray-300 pb-2">
-        <Link className=" hover:text-emerald-500" to="/">
-          Home
-        </Link>
-        <Link className="hover:text-emerald-500" to="/about">
-          About
-        </Link>
-      </div>
-    </>
+    <div className="flex justify-end gap-7 text-lg md:mr-10 mb-10 border-b border-gray-300 pb-2">
+      <Link
+        to="/"
+        className={`hover:text-emerald-500 ${
+          location.pathname === "/" ? "text-emerald-600 font-bold" : ""
+        }`}
+      >
+        Home
+      </Link>
+      <Link
+        to="/about"
+        className={`hover:text-emerald-500 ${
+          location.pathname === "/about" ? "text-emerald-600 font-bold" : ""
+        }`}
+      >
+        About
+      </Link>
+    </div>
   );
 };
 
