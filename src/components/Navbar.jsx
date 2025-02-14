@@ -4,7 +4,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <div className="flex justify-end gap-7 text-lg md:mr-10 mb-10 border-b border-gray-300 pb-2">
+    <div className="flex justify-end gap-7 text-lg md:mr-10 mb-10 border-b border-gray-300 pb-2 leading-snug">
       <Link
         to="/"
         className={`hover:text-emerald-500 ${
