@@ -1,17 +1,27 @@
 import TodoItem from "./TodoItem";
 
 const TodoList = ({ todos, toggleTodo, removeTodo }) => {
+  const allDone = todos.length > 0 && todos.every((todo) => todo.completed);
+
   return (
-    <ul className="space-y-1 p-2 mt-3 max-w-md mx-auto">
-      {todos.map((todo) => (
-        <TodoItem
-          key={todo.id}
-          todo={todo}
-          toggleTodo={toggleTodo}
-          removeTodo={removeTodo}
-        />
-      ))}
-    </ul>
+    <div className="max-w-md mx-auto mt-6">
+      <ul className="space-y-2">
+        {todos.map((todo) => (
+          <TodoItem
+            key={todo.id}
+            todo={todo}
+            toggleTodo={toggleTodo}
+            removeTodo={removeTodo}
+          />
+        ))}
+      </ul>
+
+      {allDone && (
+        <div className="mt-6 text-center text-green-600 font-semibold text-lg animate-bounce">
+          🎉 Alla uppgifter är klara! Bra jobbat! 🎉
+        </div>
+      )}
+    </div>
   );
 };
 
